@@ -1,0 +1,103 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.box{
+    background-color: rgb(219, 255, 255);
+    padding: 20px;
+    border-radius: 4px;
+    
+}
+.title{
+    color: black;
+    margin-top: 0;
+}
+.btn{
+    padding: 10px;
+    background-color: rgb(191, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    margin-top: 10px;
+    display: inline-block;
+    transition: backgroud 0.3s;
+}
+.btn:hover{
+    background-color: green;
+}
+#header{
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+#header h1{
+    margin: 0;
+    font-size: 28px;
+}
+#menu{
+    background-color: rgb(148, 210, 255);
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+#menu ul li{
+    position: relative; /*Định vị lại vị trí menu con*/  
+}
+#menu ul li a{
+    display: block;
+    padding: 15px;
+}
+#menu ul li:hover{
+    background-color: rgb(244, 165, 165);
+}
+#menu ul li ul{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(213, 168, 255);
+    min-width: 180px;
+    flex-direction: column; /*gộp các menu thành một cột, colum:cột dọc*/
+    z-index: 100;
+}
+#menu ul li:hover> ul{
+    display: flex;
+}
+#menu ul li ul li ul{
+    top: 0;
+    left: 100%;
+}
+#main{
+    display: flex;
+    max-width: 1000px;
+    margin: 20px auto;
+    gap: 20px;
+    text-align: center;
+}
+#content{
+flex: 3;
+}
+#sidebar{
+flex: 1;
+}
+#fooder{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+#footer p{
+    margin: 0;
+    text-align: center;
+}
